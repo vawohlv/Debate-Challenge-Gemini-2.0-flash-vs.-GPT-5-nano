@@ -1,1 +1,1 @@
-# Debating-challenge-Gemini-2.0-flash-v-s-GPT-5-nano
+# Debate Challenge | Gemini-2.0-flash vs. GPT-5-nano
