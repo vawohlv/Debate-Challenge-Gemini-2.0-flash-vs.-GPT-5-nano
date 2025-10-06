@@ -52,3 +52,36 @@ For support, questions, or feedback regarding the Debate Crew or crewAI.
 - [Chat with our docs](https://chatg.pt/DWjSBZn)
 
 Let's create wonders together with the power and simplicity of crewAI.
+
+## FOR WINDOWS USERS: Possibility to work with uv and CrewAI on a Conda or Mamba environment
+
+I was able to develop  this project using a Mamba environment with Python 3.12, and a huge recommendation is to create your *.venv* file pointing to your python from your mamba environment.
+
+1) For Windows, run in the cmd:
+
+```bash
+where python
+```
+
+2) Extract the path for the *python.exe* asociated to the Mamba/Conda environment you're working on (remember to activate it).
+
+3) Add this path on the following uv command:
+
+```bash
+uv venv -p C:\Users\jsmith\.local\share\mamba\envs\crewai_env\python.exe
+```
+
+*Please notice that crewai_env is the mamba environment I created*
+
+4) Then connect to this new environemnt (CMD):
+
+```bash
+.venv\Scripts\activate
+```
+
+5) You should be close to ready for running `crewai run` command, but first is really recommendable (and sometimes really problem solving) to run this following command first:
+
+```bash
+uv sync
+``` 
+
